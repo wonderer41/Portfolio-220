@@ -1,0 +1,13 @@
+.widgets .widget-item{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 10px;
+    gap: 24px;
+  }
+
+.home-body{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }

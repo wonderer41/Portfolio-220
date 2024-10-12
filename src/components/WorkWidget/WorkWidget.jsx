@@ -1,16 +1,17 @@
 import './WorkWidget.css';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 
 const WorkWidget = ({ title, content, experiences }) => {
   return (
-    <section data-testid="workWidget" className="work-widget">
-      <h2 data-testid="workWidgetTitle">{title}</h2>
+    <section data-testid="workWidget" className="work-widget widget">
+      <h2 data-testid="workWidgetTitle"><Image src='/WorkWidget/icon.svg' width={24} height={24} alt='Work Widget Icon'/>{title}</h2>
       <p data-testid="workWidgetContent">{content}</p>
       <ul>
         {experiences.map((experience, index) => (
           <li key={index} data-testid={`workWidgetItem${index}`}>
             <div className="work-item">
-              <img data-testid={`workWidgetItemLogo${index}`} src={experience.logo} alt={`Item${index} Logo`} />
+              <Image data-testid={`workWidgetItemLogo${index}`} src={experience.logo} width={42} height={42} alt={`Item${index} Logo`} />
               <div className="work-item-content">
                 <h3 data-testid={`workWidgetItemTitle${index}`}>{experience.organization}</h3>
                 <div className="work-item-content-details">

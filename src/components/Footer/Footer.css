@@ -30,3 +30,8 @@
   font-size: 14px;
   margin: 0;
 }
+
+.dark .footer {
+  background-color: #111827;
+  color: #fff;
+}

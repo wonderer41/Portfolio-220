@@ -1,33 +1,33 @@
 export const skills = [
-    { name: 'HTML', proficiency: 60, icon: 'html5.png' },
-    { name: 'CSS', proficiency: 50, icon: 'css3.png' },
-    { name: 'JavaScript', proficiency: 75, icon: 'javascript.png' },
+    { name: 'HTML', proficiency: 60, icon: '/SkillsWidget/html5.png' },
+    { name: 'CSS', proficiency: 50, icon: '/SkillsWidget/css3.png' },
+    { name: 'JavaScript', proficiency: 75, icon: '/SkillsWidget/javascript.png' },
   ];
 
 export const work = [
     {
-      logo: '/slack.png',
+      logo: '/WorkWidget/slack.png',
       organization: 'Slack',
       jobTitle: 'Software Engineer',
       startYear: 2016,
       endYear: null,
     },
     {
-      logo: '/spotify.png',
+      logo: '/WorkWidget/spotify.png',
       organization: 'Spotify',
       jobTitle: 'Software Engineer',
       startYear: 2014,
       endYear: 2015,
     },
     {
-      logo: '/audible.png',
+      logo: '/WorkWidget/audible.png',
       organization: 'Audible',
       jobTitle: 'Software Engineer',
       startYear: 2012,
       endYear: 2013,
     },
     {
-      logo: '/microsoft.png',
+      logo: '/WorkWidget/microsoft.png',
       organization: 'Microsoft',
       jobTitle: 'Software Engineer',
       startYear: 2010,
@@ -54,3 +54,36 @@ export const footerLinks = [
     },
   ];
 
+export const navOptions = [
+  { path: '/', label: 'Home' },
+  { path: '/projects', label: 'Projects' },
+  { path: '/uses', label: 'Uses' },
+  { path: '/about', label: 'About' },
+  ];
+
+export const socialIcons = [
+    { icon: '/SocialIcons/github.svg', link: 'https://github.com' },
+    { icon: '/SocialIcons/linkedin.svg', link: 'https://linkedin.com' },
+    { icon: '/SocialIcons/twitter.svg', link: 'https://twitter.com' },
+  ];
+
+export const articleList = [
+    {
+      date: '2021-01-01',
+      title: 'My first article',
+      content: 'This is my first article. I hope you enjoy it!',
+      link: '/articles/my-first-article',
+    },
+    {
+      date: '2021-02-01',
+      title: 'My second article',
+      content: 'This is my second article. I hope you enjoy it!',
+      link: '/articles/my-second-article',
+    },
+    {
+      date: '2021-03-01',
+      title: 'My third article',
+      content: 'This is my third article. I hope you enjoy it!',
+      link: '/articles/my-third-article',
+    },
+  ];
