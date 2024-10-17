@@ -1,14 +1,15 @@
 import './Introduction.css';
 import Image from 'next/image'
 import PropTypes from 'prop-types';
+import socialLinks from '../Data';
 
-const Introduction = ({title, content, socialLinks}) => {
+const Introduction = ({title, content, socialLinks = []}) => {
     return (
-        <div>
-            <Image src='/Introduction/profile.jpg' width={200} height={200} alt='Profile picture'/>
+        <div className='introduction'>
+            <Image src='/Introduction/profile.jpg' width={60} height={60} className="rounded-full border-2 border-inherit shadow-lg m-2" alt='Profile picture'/>
             <h1>{title}</h1>
             <p>{content}</p>
-            <ul>
+            <ul className='flex flex-row gap-12'>
                 {socialLinks.map((socialLink, index) => (
                     <li key={index}>
                         <a href={socialLink.link} target='_blank' rel="noopener noreferrer">
@@ -30,10 +31,6 @@ Introduction.propTypes = {
             link: PropTypes.string.isRequired,
         })
     ).isRequired,
-};
-
-Introduction.defaultProps = {
-    socialLinks: [],
 };
 
 export default Introduction;

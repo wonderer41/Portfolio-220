@@ -16,7 +16,7 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
     try {
       setBusy(true);
       // Wait 2 seconds (simulating a network request)
-      await new Promise((resolve) => setTimeout(resolve, simulateNetworkRequestTime));
+      await new Promise((resolve) => setTimeout(resolve, simulateNetworkRequestTime = 2000));
       setMessage(`Thanks for subscribing, ${email}!`);
       setIsSubscribed(true);
     } finally {
@@ -62,10 +62,6 @@ SignupWidget.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   simulateNetworkRequestTime: PropTypes.number,
-};
-
-SignupWidget.defaultProps = {
-  simulateNetworkRequestTime: 2000,
 };
 
 export default SignupWidget;

@@ -1,4 +1,7 @@
 import {Roboto} from 'next/font/google';
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
+import {footerLinks, navOptions} from '@/components/Data';
 import './globals.css';
 
 const roboto = Roboto({
@@ -11,7 +14,15 @@ const roboto = Roboto({
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-    <body className={roboto.className}>{children}</body>
+      <Header navOptions={navOptions}/>
+      <body className={`${roboto.className} bg-zinc-50 dark:bg-black lg:px-20 text-black dark:text-white`}>
+        <main className='flex flex-col justify-between min-h-screen bg-white dark:bg-zinc-900 max-w-7xl mx-auto'>
+          <div className="flex-grow">
+            {children}
+          </div>
+          <Footer links={footerLinks}/>
+        </main>
+      </body>
     </html>
   )
 }

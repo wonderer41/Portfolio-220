@@ -2,7 +2,7 @@ import './SkillsWidget.css';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-const SkillsWidget = ({ title, content, skills }) => {
+const SkillsWidget = ({ title, content, skills = [] }) => {
   return (
     <section data-testid="skillsWidget" className="skills-widget widget">
       <h2 data-testid="skillsWidgetTitle"><Image src='/SkillsWidget/icon.svg' width={24} height={24} alt='Skills Widget Icon'/>{title}</h2>
@@ -42,7 +42,4 @@ SkillsWidget.propTypes = {
   ).isRequired,
 };
 
-SkillsWidget.defaultProps = {
-  skills: [],
-};
 export default SkillsWidget;

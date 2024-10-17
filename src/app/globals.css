@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 .dark {
-  background-color: #1b253f;
+  background-color: #17171A           ;
   color: #fff;
+  border: 1px solid #3F3F4666
+}
+
+.widget{
+  padding: 6px;
 }
 
 .footer{
