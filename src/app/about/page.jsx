@@ -8,9 +8,15 @@ export const metadata = {
 
 export default function About({ title, content, socialLinks }) {
   return (
-    <div className="flex justify-start items- ">
-      <Introduction />
-      <div className=""></div>
+    <div>
+      <div className="flex justify-start items- ">
+        <Introduction />
+      </div>
+      <div>
+        <img className="w-30 h-30" src="public\about\aboutimage.jpeg" alt="profile for about" />
+
+        <div></div>
+      </div>
     </div>
   );
 }
