@@ -20,7 +20,7 @@ export default function Home() {
         <Navbar options={navOptions}/>
         <ThemeSwitcher darkClassName={"dark"}/>
       </div>
-        <Introduction className='introduction' title={'Hi, I&apos;m John Doe'} content={'Placeholder'} socialLinks={socialLinks}/>
+        <Introduction className='introduction' title={"Hi, I'm John Doe"} content={'Placeholder'} socialLinks={socialLinks}/>
       <div className='home-body'>
         <ArticleCard articleDetails={articleList} />
         <section className='widgets'>
