@@ -16,7 +16,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div className='p-20'>
-        <Introduction className='introduction' title={"Software engineer, father, and believer"} content={'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..'} socialLinks={socialLinks}/>
+        <Introduction className='introduction' title={"Software engineer, father, and believer"} content={'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..'} socialLinks={socialLinks}/>
       <div className='body-container flex flex-row space-x-10 p-8'>
         <ArticleCard articleList={articleList} />
         <section className='widget-container' >
