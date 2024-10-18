@@ -5,7 +5,13 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div>About
+    <div ClassName="flex justify-start items- ">
+      <div> 
+
+      </div>
+      <div>
+
+      </div>
     </div>
   );
 }
