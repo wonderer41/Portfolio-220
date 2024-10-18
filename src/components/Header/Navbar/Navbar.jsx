@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="flex flex-row items-center px-3 h-10 border border-zinc-900/5 dark:border-white-500/10 rounded-full">
-        <ul className="flex flex-row gap-x-2 items-center px-3">
+        <ul className="flex flex-row gap-x-2 px-3">
           <NavbarLink href="/" label="Home" />
           <NavbarLink href="/about" label="About" />
           <NavbarLink href="/projects" label="Projects" />

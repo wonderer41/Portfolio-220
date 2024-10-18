@@ -1,23 +1,14 @@
 'use client';
 
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
-import Image from 'next/image';
-import PropTypes from 'prop-types';
-import './ThemeSwitcher.css';
 
-const ThemeSwitcher = ({ darkClassName = 'dark'}) => {
+const ThemeSwitcher = () => {
   // Check the user's preferred color scheme
-  useLayoutEffect(() => {
-    const preferredtheme = window.matchMedia('(prefers-color-scheme: dark)');
-    setIsDarkMode(preferredtheme.matches); 
-  }, []);
-
-  // State to hold the selected theme
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => window.matchMedia('(prefers-color-scheme: dark)').matches);
 
   // Apply the selected theme (dark or light) when the component mounts
   useEffect(() => {
-    applyTheme();
+    applyTheme(isDarkMode);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDarkMode]);
 
@@ -27,26 +18,33 @@ const ThemeSwitcher = ({ darkClassName = 'dark'}) => {
   };
 
   // Apply the selected theme by adding/removing a class to the body element
-  function applyTheme() {
+  function applyTheme(isDarkMode) {
     const body = document.getElementsByTagName('body')[0];
+    const main = document.getElementsByTagName('main')[0];
     if (isDarkMode) {
-      body.classList.add(darkClassName);
+      body.classList.add('dark');
+      main.classList.add('dark');
     } else {
-      body.classList.remove(darkClassName);
+      body.classList.remove('dark');
+      main.classList.remove('dark');
     }
   }
 
   return (
     <div>
-      <button className="dark:bg-zinc-800/90" data-testid="themeSwitcherButton" onClick={toggleTheme}>
-        {isDarkMode ? <Image src='/ThemeSwitcher/Moon.svg' width={18} height={18} alt='Moon Icon'/> : <Image src='/ThemeSwitcher/Sun.svg' width={18} height={18} alt='Sun Icon'/>}
+      <button className="flex flex-row justify-center w-12 h-10 px-3 py-2 ring-1 ring-zinc-900/5 active:ring-teal-400 active:ring-offset-6 dark:ring-white-500/10 dark:hover:ring-white-500/20 shadow-lg rounded-full dark:bg-zinc-800/90" data-testid="themeSwitcherButton" onClick={toggleTheme}>
+        {isDarkMode ? 
+          <svg className="stroke-zinc-500 fill-zinc-700 hover:stroke-zinc-400" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.376 15.378C20.1872 15.8734 18.9119 16.1277 17.624 16.126C12.239 16.126 7.874 11.761 7.874 6.37599C7.874 5.04599 8.14 3.77899 8.622 2.62399C6.84547 3.36511 5.32797 4.61535 4.26063 6.21725C3.19329 7.81915 2.62384 9.70107 2.624 11.626C2.624 17.011 6.989 21.376 12.374 21.376C14.2989 21.3762 16.1808 20.8067 17.7827 19.7394C19.3846 18.672 20.6349 17.1545 21.376 15.378Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        : 
+          <svg className="stroke-teal-500 hover:stroke-teal-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3V5.25M18.364 5.636L16.773 7.227M21 12H18.75M18.364 18.364L16.773 16.773M12 18.75V21M7.227 16.773L5.636 18.364M5.25 12H3M7.227 7.227L5.636 5.636M15.75 12C15.75 12.9946 15.3549 13.9484 14.6517 14.6517C13.9484 15.3549 12.9946 15.75 12 15.75C11.0054 15.75 10.0516 15.3549 9.34835 14.6517C8.64509 13.9484 8.25 12.9946 8.25 12C8.25 11.0054 8.64509 10.0516 9.34835 9.34835C10.0516 8.64509 11.0054 8.25 12 8.25C12.9946 8.25 13.9484 8.64509 14.6517 9.34835C15.3549 10.0516 15.75 11.0054 15.75 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        }
       </button>
     </div>
   );
-};
-
-ThemeSwitcher.propTypes = {
-  darkClassName: PropTypes.string.isRequired,
 };
 
 export default ThemeSwitcher;

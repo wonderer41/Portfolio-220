@@ -5,6 +5,12 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class', 
+  theme: {
+    extend: {
+      "bg-zinc-900": "#17171A",
+    },
+  },
   theme: {
     extend: {
       backgroundImage: {
