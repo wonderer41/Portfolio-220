@@ -69,21 +69,21 @@ export const socialLinks = [
 
 export const articleList = [
     {
-      date: '2021-01-01',
-      title: 'My first article',
-      content: 'This is my first article. I hope you enjoy it!',
+      date: 'December 25, 2023',
+      title: 'Lorem ipsum dolor sit amet',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...',
       link: '/articles/my-first-article',
     },
     {
-      date: '2021-02-01',
-      title: 'My second article',
-      content: 'This is my second article. I hope you enjoy it!',
+      date: 'December 25, 2023',
+      title: 'Lorem ipsum dolor sit amet',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...',
       link: '/articles/my-second-article',
     },
     {
-      date: '2021-03-01',
-      title: 'My third article',
-      content: 'This is my third article. I hope you enjoy it!',
+      date: 'December 25, 2023',
+      title: 'Lorem ipsum dolor sit amet',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...',
       link: '/articles/my-third-article',
     },
   ];
