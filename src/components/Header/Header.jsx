@@ -1,13 +1,12 @@
 'use client';
 import Navbar from "@/components/Header/Navbar/Navbar";
 import ThemeSwitcher from "@/components/Header/ThemeSwitcher/ThemeSwitcher";
-import {navOptions} from "@/components/Data";
 
 export default function Header() {
   return (
-    <div className="header">
-      <div className='w-48 h-40'/>
-      <Navbar options={navOptions} />
+    <div className="header flex flex-row justify-between px-12 pt-6 pb-2">
+      <div className='w-12 h-10'/>
+      <Navbar />
       <ThemeSwitcher darkClassName={"dark"}/>
     </div>
   );
