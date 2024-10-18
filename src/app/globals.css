@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dark {
-  background-color: #17171A;
+  background: #17171A;
   color: #fff;
   border: 1px solid #3F3F4666
 }
