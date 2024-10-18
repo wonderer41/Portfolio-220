@@ -35,11 +35,11 @@
 }
 
 .link:hover {
-  text-decoration: underline;
-  text-decoration-color: #38bdf8;
+  text-decoration: none;
+  color: #14B8A6;
 }
 
 .link:active {
-  color: #38bdf8;
-  text-decoration: none;
+  border: 1px solid #14B8A6;
+  border-radius: 6px;
 }

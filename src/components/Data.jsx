@@ -61,10 +61,10 @@ export const navOptions = [
   { path: '/about', label: 'About' },
   ];
 
-export const socialIcons = [
-    { icon: '/SocialIcons/github.svg', link: 'https://github.com' },
-    { icon: '/SocialIcons/linkedin.svg', link: 'https://linkedin.com' },
-    { icon: '/SocialIcons/twitter.svg', link: 'https://twitter.com' },
+export const socialLinks = [
+    { icon: '/SocialLinks/github.svg', link: 'https://github.com' },
+    { icon: '/SocialLinks/linkedin.svg', link: 'https://linkedin.com' },
+    { icon: '/SocialLinks/twitter.svg', link: 'https://twitter.com' },
   ];
 
 export const articleList = [

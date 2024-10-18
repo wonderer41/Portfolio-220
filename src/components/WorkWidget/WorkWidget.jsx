@@ -2,7 +2,7 @@ import './WorkWidget.css';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-const WorkWidget = ({ title, content, experiences }) => {
+const WorkWidget = ({ title, content, experiences = [] }) => {
   return (
     <section data-testid="workWidget" className="work-widget widget">
       <h2 data-testid="workWidgetTitle"><Image src='/WorkWidget/icon.svg' width={24} height={24} alt='Work Widget Icon'/>{title}</h2>
@@ -43,8 +43,5 @@ WorkWidget.propTypes = {
   ),
 };
 
-WorkWidget.defaultProps = {
-  experiences: [],
-};
 
 export default WorkWidget;

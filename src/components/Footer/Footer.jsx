@@ -1,7 +1,7 @@
 import './Footer.css';
 import PropTypes from 'prop-types';
 
-const Footer = ({ links }) => {
+const Footer = ({ links = [] }) => {
   const year = new Date().getFullYear();
 
   return (
@@ -25,10 +25,6 @@ Footer.propTypes = {
       url: PropTypes.string.isRequired,
     })
   ),
-};
-
-Footer.defaultProps = {
-  links: [],
 };
 
 export default Footer;
