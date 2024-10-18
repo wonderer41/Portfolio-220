@@ -5,9 +5,8 @@ import socialLinks from '../Data';
 
 const Introduction = ({title, content, socialLinks = []}) => {
     return (
-        <div className='introduction' width={672} height={384}>
+        <div className='introduction'>
             <Image src='/Introduction/profile.jpg' width={60} height={60} className="rounded-full border-2 border-inherit shadow-lg m-2" alt='Profile picture'/>
-            
             <h1>{title}</h1>
             <p>{content}</p>
             <ul className='flex flex-row gap-6'>
