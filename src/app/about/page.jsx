@@ -1,5 +1,6 @@
 import Introduction from "@/components/Introduction/Introduction";
 import PropTypes from "prop-types";
+import Image from "next/image";
 
 export const metadata = {
   title: "Portfolio - About",
@@ -13,10 +14,23 @@ export default function About({ title, content, socialLinks }) {
         <Introduction />
       </div>
       <div>
-        <img className="w-30 h-30" src="public\about\aboutimage.jpeg" alt="profile for about" />
-
-        <div></div>
+        <Image
+          src="/about/aboutimage.jpeg"
+          width={464}
+          height={452}
+          className="w-113 h-110 float-left"
+          alt="profile for about"
+        />
       </div>
+      <ul>
+        <li>
+          <img src="public\SocialLinks\github.svg" alt="" />
+        </li>
+        <li>
+          <img src="public\SocialLinks\linkedin.svg" alt="" />
+        </li>
+        <li></li>
+      </ul>
     </div>
   );
 }
