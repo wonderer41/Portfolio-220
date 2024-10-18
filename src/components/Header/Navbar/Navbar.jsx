@@ -11,7 +11,7 @@ export function NavbarLink({href, label}) {
         <li className="relative py-2 px-3 gap-x-1 text-base inline-flex flex-col">
             <Link className={`${isActive ? 'text-teal-500 dark:text-teal-400' : 'text-zinc-800 dark:text-zinc-300'} hover:text-teal-500 dark:hover:text-teal-400 `} href={href}>{label}</Link>
             {isActive &&
-                <span className="absolute float-start bottom-0 w-full h-[1px] bg-gradient-to-r from-transparent via-teal-500 to-transparent"></span>
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[62px] h-[1px] bg-gradient-to-r from-transparent via-teal-500 to-transparent"></span>
             }
         </li>
     )

@@ -19,10 +19,9 @@ export default function RootLayout({children}) {
         <Header navOptions={navOptions}/>
           <div className="flex-grow">
             {children}
-          {/*</div>*/}
+          </div>
         </main>
-        <Footer links={footerLinks}/>
-      </div>
+      <Footer links={footerLinks}/>
       </body>
   </html>
   );
