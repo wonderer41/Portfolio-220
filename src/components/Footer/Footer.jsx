@@ -1,30 +1,18 @@
-import './Footer.css';
-import PropTypes from 'prop-types';
-
 const Footer = ({ links = [] }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer data-testid={'footer'} className={'footer'}>
-      <ul>
+    <footer className={'footer flex flex-row justify-items-center justify-between pt-10 pb-16 px-36 border-t border-solid border-zinc-100 dark:border-zinc-700/40'}>
+      <ul className="flex flex-row items-center gap-6">
         {links.map((link, index) => (
-          <li key={index} data-testid={`footerLink${index}`}>
-            <a href={link.url}>{link.title}</a>
+          <li key={index} className="py-2">
+            <a className="text-zinc-800 dark:text-zinc-300" href={link.url}>{link.title}</a>
           </li>
         ))}
       </ul>
-      <p data-testid="footerContent">© {year}</p>
+      <p className="text-zinc-400 text-sm">© {year} John Doe. All rights reserved.</p>
     </footer>
   );
-};
-
-Footer.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    })
-  ),
 };
 
 export default Footer;

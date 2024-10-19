@@ -20,8 +20,8 @@ export default function RootLayout({children}) {
           <div className="flex-grow">
             {children}
           </div>
+          <Footer links={footerLinks}/>
         </main>
-      <Footer links={footerLinks}/>
       </body>
   </html>
   );
