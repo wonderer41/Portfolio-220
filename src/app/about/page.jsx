@@ -9,10 +9,10 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="container mx-auto p-4">
+    <div className="flex flex-col px-36 py-16 gap-6">
       <div className="flex flex-col md:flex-row justify-between gap-8">
         {/* Left Section - Text */}
-        <div className="flex-1">
+        <div className="w-[464px]">
           <h1 className="text-3xl font-bold mb-4">I'm Jane. I live in New York City, where I develop the future.</h1>
           <p className="text-gray-600 mb-4">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
@@ -37,7 +37,7 @@ export default function About() {
         </div>
 
         {/*rigth side*/}
-        <div className="flex-1  max-w-screen-lgshadow-168 rounded-xl h-auto overflow-hidden border border-gray-300">
+        <div className="flex-initial w-[464px] grid gap-3 shadow-168 rounded-xl h-auto overflow-hidden border border-gray-300">
           {/*big image*/}
           <div className="">
             <Image
@@ -79,7 +79,7 @@ export default function About() {
             </a>
 
             {/*mail*/}
-            <div className="flex items-center justify-start text-gray-700">
+            <div className="flex  items-center justify-start text-gray-700">
               <img src="/SocialLinks/Mail.png" alt="Email" className="w-6 h-6 mr-2" />
               <span>jane@email.com</span>
             </div>
