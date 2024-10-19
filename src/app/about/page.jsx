@@ -13,23 +13,25 @@ export default function About() {
       <div className="flex flex-col md:flex-row justify-between gap-8">
         {/* Left Section - Text */}
         <div className="w-[464px]">
-          <h1 className="text-3xl font-bold mb-4">I'm Jane. I live in New York City, where I develop the future.</h1>
-          <p className="text-gray-600 mb-4">
+          <h1 className=" text-zinc-800  dark:text-zinc-100 text-5xl leading-[56px] font-bold mb-4">
+            I'm Jane. I live in New York City, where I develop the future.
+          </h1>
+          <p className="text-zinc-800  dark:text-zinc-100 mb-4">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
             adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem
             ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..
           </p>
-          <p className="text-gray-600 mb-4">
+          <p className="text-zinc-800  dark:text-zinc-100 mb-4">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
             adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem
             ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..
           </p>
-          <p className="text-gray-600 mb-4">
+          <p className="text-zinc-800  dark:text-zinc-100 mb-4">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
             adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem
             ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..
           </p>
-          <p className="text-gray-600 mb-4">
+          <p className="text-zinc-800  dark:text-zinc-100 mb-4">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
             adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem
             ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..
@@ -54,7 +56,7 @@ export default function About() {
             {/*twitter*/}
             <a
               href="https://twitter.com"
-              className="flex items-center justify-start mb-4 text-gray-700 hover:text-black"
+              className="flex items-center justify-start mb-4 text-zinc-800  dark:text-zinc-100 hover:text-black"
             >
               <img src="/SocialLinks/twitter.svg" alt="Twitter" className="w-6 h-6 mr-2" />
               <span>Follow me on X</span>
@@ -63,7 +65,7 @@ export default function About() {
             {/*git*/}
             <a
               href="https://github.com"
-              className="flex items-center justify-start mb-4 text-gray-700 hover:text-black"
+              className="flex items-center justify-start mb-4 text-zinc-800  dark:text-zinc-100 hover:text-black"
             >
               <img src="/SocialLinks/github.svg" alt="Github" className="w-6 h-6 mr-2" />
               <span>Follow me on Github</span>
@@ -72,15 +74,19 @@ export default function About() {
             {/* Lknd*/}
             <a
               href="https://linkedin.com"
-              className="flex items-center justify-start mb-4 text-gray-700 hover:text-black"
+              className="flex items-center justify-start mb-4 text-zinc-800  dark:text-zinc-100 hover:text-black"
             >
-              <img src="/SocialLinks/linkedin.svg" alt="LinkedIn" className="w-6 h-6 mr-2" />
+              <img
+                src="/SocialLinks/linkedin.svg"
+                alt="LinkedIn"
+                className="w-6 h-6 mr-2 text-zinc-800  dark:text-zinc-100"
+              />
               <span>Follow me on LinkedIn</span>
             </a>
 
             {/*mail*/}
-            <div className="flex  items-center justify-start text-gray-700">
-              <img src="/SocialLinks/Mail.png" alt="Email" className="w-6 h-6 mr-2" />
+            <div className="flex  items-center justify-start text-zinc-800  dark:text-zinc-100">
+              <img src="/SocialLinks/Mail.png" alt="Email" className="w-6 h-6 mr-2 text-zinc-800  dark:text-zinc-100" />
               <span>jane@email.com</span>
             </div>
           </div>
