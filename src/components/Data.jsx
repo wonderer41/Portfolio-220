@@ -1,7 +1,7 @@
 export const skills = [
-    { name: 'HTML', proficiency: 60, icon: '/SkillsWidget/html5.png' },
-    { name: 'CSS', proficiency: 50, icon: '/SkillsWidget/css3.png' },
-    { name: 'JavaScript', proficiency: 75, icon: '/SkillsWidget/javascript.png' },
+    { name: 'HTML', proficiency: 60, icon: '/SkillsWidget/html5.svg' },
+    { name: 'CSS', proficiency: 50, icon: '/SkillsWidget/css3.svg' },
+    { name: 'JavaScript', proficiency: 75, icon: '/SkillsWidget/javascript.svg' },
   ];
 
 export const work = [
