@@ -24,7 +24,7 @@ export default function Home() {
         }
         socialLinks={socialLinks}
       />
-      <div className="body-container flex flex-row justify-between">
+      <div className="body-container flex flex-col justify-between sm:flex-row ">
         <ArticleCard articleList={articleList} />
         <section className="widget-container flex flex-col gap-6">
           <SignupWidget

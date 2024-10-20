@@ -10,7 +10,7 @@ export const metadata = {
 export default function About() {
   return (
     <div className="flex flex-col px-36 py-16 gap-6">
-      <div className="flex flex-col md:flex-row justify-between gap-8">
+      <div className="flex flex-col sm:flex-row justify-between gap-8">
         {/* Left Section - Text */}
         <div className="w-[464px]">
           <h1 className=" text-zinc-800  dark:text-zinc-100 text-5xl leading-[56px] font-bold mb-4">
@@ -95,13 +95,3 @@ export default function About() {
     </div>
   );
 }
-About.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  socialLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      icon: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};

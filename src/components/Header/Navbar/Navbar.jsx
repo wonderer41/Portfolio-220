@@ -21,6 +21,7 @@ export function NavbarLink({href, label}) {
 export default function Navbar() {
   return (
     <div>
+      /** small screen after sm:*/
       <nav className="flex flex-row items-center px-3 h-10 dark:bg-zinc-800/90 ring-1 dark:ring-2 ring-zinc-900/5 dark:ring-white/10 shadow-lg rounded-full">
         <ul className="flex flex-row gap-x-2 px-3">
           <NavbarLink href="/" label="Home" />
