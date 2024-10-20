@@ -1,7 +1,9 @@
 'use client';
 
 import Link from "next/link";
+import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { navOptions } from "@/components/Data";
 
 export function NavbarLink({href, label}) {
     const pathname = usePathname();
@@ -16,19 +18,44 @@ export function NavbarLink({href, label}) {
         </li>
     )
 }
+export function NavbarOptions() {
+   return(
+   <ul className="flex flex-row gap-x-2 px-3">
+       <NavbarLink href="/" label="Home" />
+       <NavbarLink href="/about" label="About" />
+       <NavbarLink href="/projects" label="Projects" />
+       <NavbarLink href="/uses" label="Uses" />
+        </ul>
+  );
+};
+export function Dropdown () {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const open = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+  return (
+    <div className="dropdown">
+    <button className="dropdown-btn" onClick={open}>
+        Menu
+    </button>
+    {isOpen && (
+        <NavbarOptions />
+    )}
+    </div>
+  );
+};
 
 export default function Navbar() {
   return (
     <div>
-      /** small screen after sm:*/
       <nav className="flex flex-row items-center px-3 h-10 dark:bg-zinc-800/90 ring-1 dark:ring-2 ring-zinc-900/5 dark:ring-white/10 shadow-lg rounded-full">
-        <ul className="flex flex-row gap-x-2 px-3">
-          <NavbarLink href="/" label="Home" />
-          <NavbarLink href="/about" label="About" />
-          <NavbarLink href="/projects" label="Projects" />
-          <NavbarLink href="/uses" label="Uses" />
-        </ul>
+        <div className="hidden sm:flex">
+          <NavbarOptions />
+        </div>
+        <div className="flex sm:hidden">
+          <Dropdown />
+        </div>
       </nav>
     </div>
   );
