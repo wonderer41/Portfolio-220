@@ -9,7 +9,18 @@ export const metadata = {
 
 export default function About() {
   return (
+    
     <div className="flex flex-col px-36 py-16 gap-6">
+       {/*big image*/}
+       <div className="sm:hidden">
+            <Image
+              src="/about/aboutimage.jpeg"
+              alt="Profile picture"
+              className="w-full h-full object-cover"
+              width={464}
+              height={452}
+            />
+          </div>
       <div className="flex flex-col sm:flex-row justify-between gap-8">
         {/* Left Section - Text */}
         <div className="w-[464px]">
