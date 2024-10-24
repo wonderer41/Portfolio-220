@@ -9,21 +9,20 @@ export const metadata = {
 
 export default function About() {
   return (
-    
-    <div className="flex flex-col px-36 py-16 gap-6">
-       {/*big image*/}
-       <div className="sm:hidden">
-            <Image
-              src="/about/aboutimage.jpeg"
-              alt="Profile picture"
-              className="w-full h-full object-cover"
-              width={464}
-              height={452}
-            />
-          </div>
-      <div className="flex flex-col sm:flex-row justify-between gap-8">
+    <div className="flex flex-col">
+      {/*big image*/}
+      <div className="lg:hidden p-4">
+        <Image
+          src="/about/aboutimage.jpeg"
+          alt="Profile picture"
+          className="w-full h-full object-cover"
+          width={464}
+          height={452}
+        />
+      </div>
+      <div className="flex flex-col lg:flex-row justify-between gap-8">
         {/* Left Section - Text */}
-        <div className="w-[464px]">
+        <div className="w- full max-w-[464px] lg:">
           <h1 className=" text-zinc-800  dark:text-zinc-100 text-5xl leading-[56px] font-bold mb-4">
             I'm Jane. I live in New York City, where I develop the future.
           </h1>
@@ -52,7 +51,7 @@ export default function About() {
         {/*rigth side*/}
         <div className="flex-initial w-[464px] grid gap-3 shadow-168 rounded-xl h-auto overflow-hidden border border-gray-300">
           {/*big image*/}
-          <div className="">
+          <div className="lg:flex hidden ">
             <Image
               src="/about/aboutimage.jpeg"
               alt="Profile picture"
