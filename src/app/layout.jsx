@@ -14,8 +14,8 @@ const roboto = Roboto({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-zinc-50 dark:bg-black lg:px-20 text-black dark:text-white`}>
-        <main className="flex flex-col justify-between min-h-screen bg-white dark:bg-zinc-900 max-w-7xl mx-auto">
+      <body className={`${roboto.className} bg-zinc-50 dark:bg-black sm:px-20 text-black dark:text-white`}>
+        <main className="flex flex-col justify-between max-h-screen bg-white dark:bg-zinc-900 max-w-7xl mx-auto">
           <Header navOptions={navOptions} />
           <div className="flex-grow">{children}</div>
           <Footer links={footerLinks} />
