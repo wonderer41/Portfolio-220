@@ -23,7 +23,7 @@ const WorkWidget = ({ title, content, experiences = [] }) => {
                 <p className="text-xs leading-6 text-zinc-500 dark:text-zinc-400 uppercase">{experience.jobTitle}</p>
                 <span className="text-xs leading-6 text-zinc-400 dark:text-zinc-500">
                   {experience.startYear} - {experience.endYear || 'current'}
-                </span>
+                </span> 
               </div>
             </div>
           </li>

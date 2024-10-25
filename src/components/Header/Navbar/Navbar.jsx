@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { navOptions } from "@/components/Data";
 
 export function NavbarLink({ href, label }) {
   const pathname = usePathname();
@@ -20,39 +19,30 @@ export function NavbarLink({ href, label }) {
         {label}
       </Link>
       {isActive && (
-        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[62px] h-[1px] bg-gradient-to-r from-transparent via-teal-500 to-transparent"></span>
+        <span className="hidden lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2 lg:w-[62px] lg:h-[1px] lg:bg-gradient-to-r lg:from-transparent lg:via-teal-500 lg:to-transparent"></span>
       )}
     </li>
   );
 }
 
 export function Dropdown() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const open = () => {
     setIsOpen((prevState) => !prevState);
   };
   return (
     <div className="">
-      <button className="inline-flex justify-center gap-x-2 items-center" onClick={open}>
+      <button className="inline-flex justify-center gap-x-6 items-center" onClick={open}>
         <span>Menu </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="w-4 h-4"
-        >
+        <svg className="w-4 h-4" mlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="m6 9 6 6 6-6" />
         </svg>
       </button>
       {isOpen && (
-        <div className="absolute top-0 left-0 z-10 w-90 w-[200px] h-[284px] gap-24 rounded-tl-[24px] gap-y-2 bg-white dark:bg-zinc-900">
-          <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-400">
-            <div>Navigation</div>
+        <div className="absolute top-[-10px] left-[-20px] z-10 w-90 w-[260px] h-[284px] p-6 rounded-[24px] gap-y-6 bg-red-500 shadow dark:bg-zinc-900">
+          <div className="flex flex-row items-center justify-between text-zinc-600 dark:text-zinc-400">
+            <div className="font-md text-sm">Navigation</div>
             <button className="" onClick={open}>
               x
             </button>

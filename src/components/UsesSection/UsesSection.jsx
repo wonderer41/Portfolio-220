@@ -3,10 +3,10 @@ import UseCard from '../UseCard/UsesCard.jsx';
 
 const UsesSection = ({ items }) => {
   return (
-    <section className="flex flex-col p-{32px}">
+    <section className="flex flex-col p-15">
       <div className="flex flex-col gap-y-64">
         {items.map((i, index) => (
-          <div key={index} className="flex flex-row justify-start gap-x-32 pl-{16px} border-l-2">
+          <div key={index} className="flex flex-col lg:flex-row justify-start gap-x-32 pl-{16px} border-l-2">
             <h2>{i.groupName}</h2>
             <div className="flex flex-col gap-y-32">
               {i.items.map((subitem, subIndex) => (

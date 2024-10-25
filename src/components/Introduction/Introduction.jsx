@@ -3,7 +3,7 @@ import socialLinks from "../Data";
 
 const Introduction = ({ title, content, socialLinks = [] }) => {
   return (
-    <div className="flex flex-col gap-6 w-full lg:w-168 h-96">
+    <div className="flex flex-col gap-6 w-full w-[672px] h-96">
       <Image
         src="/Introduction/profile.jpg"
         width={64}
