@@ -100,3 +100,30 @@ export const usesItems =[
     ],
   },
 ]
+
+export const projectArray = [
+    {
+      logo: '/ProjectCard/nextjs.svg',
+      name: 'Next.js',
+      content: 'The React Framework for Production',
+      link: 'https://nextjs.org',
+    },
+    {
+      logo: '/ProjectCard/tailwindcss.svg',
+      name: 'Tailwind CSS',
+      content: 'A utility-first CSS framework for rapidly building custom designs',
+      link: 'https://tailwindcss.com',
+    },
+    {
+      logo: '/ProjectCard/company.svg',
+      name: 'Company',
+      content: 'Creating technology to empower civilians to explore space on their own terms.',
+      link: 'https://company.com',
+    },
+    {
+      logo: '/ProjectCard/heroicons.svg',
+      name: 'Heroicons',
+      content: 'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
+      link: 'https://heroicons.com',
+    },
+  ];
