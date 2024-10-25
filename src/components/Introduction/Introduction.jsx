@@ -3,7 +3,7 @@ import socialLinks from "../Data";
 
 const Introduction = ({ title, content, socialLinks = [] }) => {
   return (
-    <div className="introduction flex flex-col gap-6" width={672} height={384}>
+    <div className="flex flex-col gap-6 w-full lg:w-168 h-96">
       <Image
         src="/Introduction/profile.jpg"
         width={64}
@@ -11,8 +11,8 @@ const Introduction = ({ title, content, socialLinks = [] }) => {
         className="rounded-full border-2 border-inherit shadow-lg"
         alt="Profile picture"
       />
-      <h1 className="w-[672px] h-[112px] font-roboto font-bold text-5xl leading-14">{title}</h1>
-      <p className="w-[672px] h-[112px] font-roboto text-base leading-7">{content}</p>
+      <h1 className="h-[112px] font-roboto font-bold text-5xl leading-14">{title}</h1>
+      <p className="h-[112px] font-roboto text-base leading-7">{content}</p>
       <ul className="flex flex-row gap-3">
         {socialLinks.map((socialLink, index) => (
           <li key={index}>

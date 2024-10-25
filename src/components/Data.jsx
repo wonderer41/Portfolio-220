@@ -87,3 +87,16 @@ export const articleList = [
       link: '/articles/my-third-article',
     },
   ];
+
+export const usesItems =[
+  {
+    groupName: 'Design',
+    items: [
+      {
+        title: 'Whimsical',
+        description:
+          'I use Whimsical for all of my wireframing and flowcharting. It’s fast, has great collaboration features, and is highly customizable.',
+      },
+    ],
+  },
+]
