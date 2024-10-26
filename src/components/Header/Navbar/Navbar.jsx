@@ -19,7 +19,7 @@ export function NavbarLink({ href, label }) {
         {label}
       </Link>
       {isActive && (
-        <span className="hidden lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2 lg:w-[62px] lg:h-[1px] lg:bg-gradient-to-r lg:from-transparent lg:via-teal-500 lg:to-transparent"></span>
+        <span className="xs:hidden sm:absolute sm:bottom-0 sm:left-1/2 sm:-translate-x-1/2 sm:w-[62px] sm:h-[1px] sm:bg-gradient-to-r sm:from-transparent sm:via-teal-500 sm:to-transparent"></span>
       )}
     </li>
   );
@@ -40,7 +40,7 @@ export function Dropdown() {
         </svg>
       </button>
       {isOpen && (
-        <div className="absolute top-[-10px] left-[-20px] z-10 w-90 w-[260px] h-[284px] p-6 rounded-[24px] gap-y-6 bg-red-500 shadow dark:bg-zinc-900">
+        <div className="absolute top-[-10px] left-[-20px] z-10 w-90 w-[260px] h-[284px] p-6 rounded-[24px] gap-y-6 shadow bg-white dark:bg-zinc-900">
           <div className="flex flex-row items-center justify-between text-zinc-600 dark:text-zinc-400">
             <div className="font-md text-sm">Navigation</div>
             <button className="" onClick={open}>

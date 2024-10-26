@@ -23,7 +23,7 @@ export default function About() {
         {/* Left Section - Text */}
         <div className="w- full max-w-[464px] lg:">
           <h1 className=" text-zinc-800  dark:text-zinc-100 text-5xl leading-[56px] font-bold mb-4">
-            I'm Jane. I live in New York City, where I develop the future.
+            I&apos;m Jane. I live in New York City, where I develop the future.
           </h1>
           <p className="text-zinc-800  dark:text-zinc-100 mb-4">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
@@ -48,7 +48,7 @@ export default function About() {
         </div>
 
         {/*rigth side*/}
-        <div className="flex-initial w-[464px] grid gap-3 shadow-168 rounded-xl h-auto overflow-hidden border border-gray-300">
+        <div className="flex-initial w-[464px] grid gap-3 shadow-168 rounded-xl h-auto overflow-hidden">
           {/*big image*/}
           <div className="lg:flex hidden ">
             <Image
@@ -65,9 +65,9 @@ export default function About() {
             {/*twitter*/}
             <a
               href="https://twitter.com"
-              className="flex items-center justify-start mb-4 text-zinc-800  dark:text-zinc-100 hover:text-black"
+              className="flex items-center justify-start mb-4 text-zinc-800 dark:text-zinc-100 hover:text-black"
             >
-              <img src="/SocialLinks/twitter.svg" alt="Twitter" className="w-6 h-6 mr-2" />
+              <Image width={24} height={24} src="/SocialLinks/twitter.svg" alt="Twitter" className="w-6 h-6 mr-2" />
               <span>Follow me on X</span>
             </a>
 
@@ -76,7 +76,7 @@ export default function About() {
               href="https://github.com"
               className="flex items-center justify-start mb-4 text-zinc-800  dark:text-zinc-100 hover:text-black"
             >
-              <img src="/SocialLinks/github.svg" alt="Github" className="w-6 h-6 mr-2" />
+              <Image width={24} height={24} src="/SocialLinks/github.svg" alt="Github" className="w-6 h-6 mr-2" />
               <span>Follow me on Github</span>
             </a>
 
@@ -85,17 +85,13 @@ export default function About() {
               href="https://linkedin.com"
               className="flex items-center justify-start mb-4 text-zinc-800  dark:text-zinc-100 hover:text-black"
             >
-              <img
-                src="/SocialLinks/linkedin.svg"
-                alt="LinkedIn"
-                className="w-6 h-6 mr-2 text-zinc-800  dark:text-zinc-100"
-              />
+              <Image width={24} height={24} src="/SocialLinks/linkedin.svg" alt="LinkedIn" className="w-6 h-6 mr-2 text-zinc-800  dark:text-zinc-100"/>
               <span>Follow me on LinkedIn</span>
             </a>
 
             {/*mail*/}
             <div className="flex  items-center justify-start text-zinc-800  dark:text-zinc-100">
-              <img src="/SocialLinks/Mail.png" alt="Email" className="w-6 h-6 mr-2 text-zinc-800  dark:text-zinc-100" />
+              <Image width={24} height={24} src="/SocialLinks/mail.svg" alt="Email" className="w-6 h-6 mr-2 text-zinc-800  dark:text-zinc-100" />
               <span>jane@email.com</span>
             </div>
           </div>

@@ -3,19 +3,6 @@
 @tailwind utilities;
 
 .dark {
-  background: #17171A;
+  background: #000000;
   color: #fff;
-  border: 1px solid #3F3F4666
-}
-
-.widget{
-  padding: 6px;
-}
-
-.footer{
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 30px;
 }

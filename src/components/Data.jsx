@@ -1,3 +1,5 @@
+import next from "next";
+
 export const skills = [
     { name: 'HTML', proficiency: 60, icon: '/SkillsWidget/html5.svg' },
     { name: 'CSS', proficiency: 50, icon: '/SkillsWidget/css3.svg' },
@@ -102,17 +104,29 @@ export const usesItems =[
 ]
 
 export const projectArray = [
+  {
+    logo: '/ProjectCard/company.svg',
+    name: 'Company',
+    content: 'Creating technology to empower civilians to explore space on their own terms.',
+    link: 'https://company.com',
+  },
+  {
+    logo: '/ProjectCard/company.svg',
+    name: 'Company',
+    content: 'Creating technology to empower civilians to explore space on their own terms.',
+    link: 'https://company.com',
+  },
+  {
+    logo: '/ProjectCard/company.svg',
+    name: 'Company',
+    content: 'Creating technology to empower civilians to explore space on their own terms.',
+    link: 'https://company.com',
+  },
     {
-      logo: '/ProjectCard/nextjs.svg',
-      name: 'Next.js',
-      content: 'The React Framework for Production',
-      link: 'https://nextjs.org',
-    },
-    {
-      logo: '/ProjectCard/tailwindcss.svg',
-      name: 'Tailwind CSS',
-      content: 'A utility-first CSS framework for rapidly building custom designs',
-      link: 'https://tailwindcss.com',
+      logo: '/ProjectCard/company.svg',
+      name: 'Company',
+      content: 'Creating technology to empower civilians to explore space on their own terms.',
+      link: 'https://company.com',
     },
     {
       logo: '/ProjectCard/company.svg',
@@ -121,9 +135,9 @@ export const projectArray = [
       link: 'https://company.com',
     },
     {
-      logo: '/ProjectCard/heroicons.svg',
-      name: 'Heroicons',
-      content: 'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
-      link: 'https://heroicons.com',
+      logo: '/ProjectCard/company.svg',
+      name: 'Company',
+      content: 'Creating technology to empower civilians to explore space on their own terms.',
+      link: 'https://company.com',
     },
   ];
