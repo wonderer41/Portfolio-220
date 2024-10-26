@@ -1,6 +1,5 @@
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
-import Introduction from '@/components/Introduction/Introduction';
-import { projectArray } from '@/components/Data';
+import { projectList } from '@/components/Data';
 
 export const metadata = {
   title: 'Portfolio - Projects',
@@ -18,7 +17,7 @@ export default function Projects() {
           Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..
         </p>
       </div>
-      <ProjectCard projects={projectArray}/>
+      <ProjectCard projects={projectList}/>
     </div>
   );
 }
