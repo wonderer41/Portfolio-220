@@ -1,7 +1,9 @@
+import next from "next";
+
 export const skills = [
-    { name: 'HTML', proficiency: 60, icon: '/SkillsWidget/html5.png' },
-    { name: 'CSS', proficiency: 50, icon: '/SkillsWidget/css3.png' },
-    { name: 'JavaScript', proficiency: 75, icon: '/SkillsWidget/javascript.png' },
+    { name: 'HTML', proficiency: 60, icon: '/SkillsWidget/html5.svg' },
+    { name: 'CSS', proficiency: 50, icon: '/SkillsWidget/css3.svg' },
+    { name: 'JavaScript', proficiency: 75, icon: '/SkillsWidget/javascript.svg' },
   ];
 
 export const work = [
@@ -85,5 +87,110 @@ export const articleList = [
       title: 'Lorem ipsum dolor sit amet',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...',
       link: '/articles/my-third-article',
+    },
+  ];
+
+export const workstationList =[
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+]
+
+export const developmentList =[
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+]
+export const designList =[
+  {
+    title: "Whimsical",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Figma",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+]
+export const productivityList =[
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+  {
+    title: "Item Name",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+  },
+]
+
+export const projectList = [
+  {
+    logo: '/ProjectCard/company.svg',
+    name: 'Company',
+    content: 'Creating technology to empower civilians to explore space on their own terms.',
+    link: 'https://company.com',
+  },
+  {
+    logo: '/ProjectCard/company.svg',
+    name: 'Company',
+    content: 'Creating technology to empower civilians to explore space on their own terms.',
+    link: 'https://company.com',
+  },
+  {
+    logo: '/ProjectCard/company.svg',
+    name: 'Company',
+    content: 'Creating technology to empower civilians to explore space on their own terms.',
+    link: 'https://company.com',
+  },
+    {
+      logo: '/ProjectCard/company.svg',
+      name: 'Company',
+      content: 'Creating technology to empower civilians to explore space on their own terms.',
+      link: 'https://company.com',
+    },
+    {
+      logo: '/ProjectCard/company.svg',
+      name: 'Company',
+      content: 'Creating technology to empower civilians to explore space on their own terms.',
+      link: 'https://company.com',
+    },
+    {
+      logo: '/ProjectCard/company.svg',
+      name: 'Company',
+      content: 'Creating technology to empower civilians to explore space on their own terms.',
+      link: 'https://company.com',
     },
   ];
