@@ -1,19 +1,12 @@
 /* DON'T CHANGE ME */
-import './UsesCard.css';
-import PropTypes from 'prop-types';
 
 const UsesCard = ({ title, description }) => {
   return (
-    <div className={'uses-card'}>
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <div className={"flex flex-col gap-[16px] w-full max-width-[577px]"}>
+      <h3 className={"m-0 font-lg text-bold"}>{title}</h3>
+      <p className={"text-zinc-600 text-sm leading-6"}>{description}</p>
     </div>
   );
-};
-
-UsesCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 export default UsesCard;
