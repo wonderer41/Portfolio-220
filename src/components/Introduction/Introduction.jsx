@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Introduction = ({ title, content, socialLinks = [] }) => {
   return (
-    <div className="flex flex-col gap-6 w-full lg:w-[672px] h-96">
+    <div className="flex flex-col gap-6 w-full lg:w-[672px] lg:h-96 bg-green-100">
       <Image
         src="/Introduction/profile.jpg"
         width={64}
@@ -10,8 +10,8 @@ const Introduction = ({ title, content, socialLinks = [] }) => {
         className="rounded-full border-2 border-inherit shadow-lg"
         alt="Profile picture"
       />
-      <h1 className="h-[112px] font-roboto font-bold text-5xl leading-14">{title}</h1>
-      <p className="h-[112px] font-roboto text-base leading-7">{content}</p>
+      <h1 className="font-roboto font-bold text-5xl leading-14">{title}</h1>
+      <p className=" font-roboto text-base leading-7">{content}</p>
       <ul className="flex flex-row gap-3">
         {socialLinks.map((socialLink, index) => (
           <li key={index}>

@@ -1,6 +1,6 @@
   const ArticleCard = ({articleList = []}) => {
   return (
-  <div className="article-card-container flex flex-col w-[512px]">
+  <div className="article-card-container flex flex-col lg:w-[512px] bg-red-100">
     <ul className="flex flex-col p-8 gap-10">
     {articleList?.map((article, index) => (
       <li key={index}>
