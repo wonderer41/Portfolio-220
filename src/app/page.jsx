@@ -29,19 +29,19 @@ export default function Home() {
         <div className="h-8 lg;hidden" />
         <section className="widget-container flex flex-col gap-6">
           <SignupWidget
-            title="Stay up to date"
-            content="Get notified when I publish something new, and unsubscribe at any time."
+            title="Contact me"
+            content="Whenever you want to know more about my projects and experiences."
           />
           <WorkWidget
             className="widget"
             title={"Work"}
-            content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+            content={"Some of the places I've worked on."}
             experiences={work}
           />
           <SkillsWidget
             className="widget"
             title={"Skills"}
-            content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+            content={"Some of the technologies I've worked with."}
             skills={skills}
           />
         </section>

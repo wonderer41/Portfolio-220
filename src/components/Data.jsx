@@ -1,39 +1,39 @@
 import next from "next";
 
 export const skills = [
-  { name: "HTML", proficiency: 60, icon: "/SkillsWidget/html5.svg" },
-  { name: "CSS", proficiency: 50, icon: "/SkillsWidget/css3.svg" },
-  { name: "JavaScript", proficiency: 75, icon: "/SkillsWidget/javascript.svg" },
+  { name: "HTML", proficiency: 50, icon: "/SkillsWidget/html5.svg" },
+  { name: "Tailwind CSS", proficiency: 75, icon: "/SkillsWidget/tailwind.svg" },
+  { name: "React", proficiency: 70, icon: "/SkillsWidget/react.png" },
 ];
 
 export const work = [
   {
-    logo: "/WorkWidget/slack.png",
-    organization: "Slack",
-    jobTitle: "Software Engineer",
-    startYear: 2016,
+    logo: "/WorkWidget/jpmorgann.png",
+    organization: "JPMorgan Chase & Co.",
+    jobTitle: "Senior Software Engineer",
+    startYear: 2030,
     endYear: null,
   },
   {
-    logo: "/WorkWidget/spotify.png",
-    organization: "Spotify",
-    jobTitle: "Software Engineer",
-    startYear: 2014,
-    endYear: 2015,
+    logo: "/WorkWidget/ai1.png",
+    organization: "OpenAI",
+    jobTitle: "Senior Software Engineer",
+    startYear: 2028,
+    endYear: 2030,
   },
   {
-    logo: "/WorkWidget/audible.png",
-    organization: "Audible",
-    jobTitle: "Software Engineer",
-    startYear: 2012,
-    endYear: 2013,
+    logo: "/WorkWidget/Steam_icon_logo.svg.png",
+    organization: "Steam",
+    jobTitle: "Junior Software Engineer",
+    startYear: 2026,
+    endYear: 2027,
   },
   {
     logo: "/WorkWidget/microsoft.png",
     organization: "Microsoft",
-    jobTitle: "Software Engineer",
-    startYear: 2010,
-    endYear: 2011,
+    jobTitle: "Junior Software Engineer",
+    startYear: 2025,
+    endYear: 2026,
   },
 ];
 
