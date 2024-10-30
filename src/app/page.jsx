@@ -26,6 +26,7 @@ export default function Home() {
       />
       <div className="body-container lg:flex flex-row flex-col justify-between sm:flex-row gap-6">
         <ArticleCard articleList={articleList} />
+        <div className="h-8 lg;hidden"/>
         <section className="widget-container flex flex-col gap-6">
           <SignupWidget
             title="Stay up to date"

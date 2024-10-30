@@ -53,7 +53,7 @@ export default function About() {
           </div>
 
           {/*links*/}
-          <div className="hidden lg:flex lg:flex-column p-6 text-center">
+          <div className="hidden lg:flex lg:flex-col p-6 text-center">
             {/*twitter*/}
             <a
               href="https://twitter.com"
