@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <div className="flex flex-col pt-6 px-36 pb-16 gap-6">
-      <div className="flx flex-col gap-6 w-[672px] h-[248px]">
+    <div className="flex flex-col pt-6 px-4 lg:px-36 pb-16 gap-6">
+      <div className="flex flex-col gap-y-6 py-6 w-full lg:w-[672px] lg:h-[248px]">
         <h1 className="font-bold text-zinc-800 dark:text-zinc-100 text-5xl leading-12">
           Things I&apos;ve made trying to put my dent in the universe.
         </h1>

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = ({ projects = [] }) => {
   return (
-    <div className="flex flex-col gap-4 lg:grid lg:grid-cols-3 justify-between">
+    <div className="flex flex-col gap-4 m-auto lg:grid lg:grid-cols-3 lg:justify-between">
       {projects.map((project, index) => (
       <div className="flex flex-col w-[320px] h-[236px] project-card py-4 px-8 bg-white hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800 rounded-md gap-1" key={index}>
         <Image className="rounded-full p-2 border border-zinc-300 dark:border-zinc-700/40" width={48} height={48} src={project.logo} alt={`${project.name} logo`}/>

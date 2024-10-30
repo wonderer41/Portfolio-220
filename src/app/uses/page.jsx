@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Uses() {
   return (
-    <div className="flex flex-col pt-[24px] pb-[64px] px-[144px] gap-[64px]">
+    <div className="flex flex-col lg:pt-6 lg:px-36 gap-16 bg-green-100">
       <div className={"w-[672px] gap-[24px]"}>
         <h1 className=" lg:text-zinc-800  dark:text-zinc-100 text-5xl leading-[56px] font-bold mb-4">
         Software I use, gadgets I love, and other things I recommend.
