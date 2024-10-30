@@ -5,7 +5,7 @@ const SkillsWidget = ({ title, content, skills = [] }) => {
     <section className="w-[398px] h-[332px] flex flex-col gap-y-3 p-6 border border-zinc-100 dark:border-zinc-700/40 rounded-2xl">
       <h2 className="flex flex-row font-roboto leading-7 font-semibold text-zinc-900 dark:text-zinc-100 gap-3 items-center">
         <svg className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/5 dark:stroke-zinc-500" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.75 12.5L11.25 1.25L9 9.5H17.25L6.75 20.75L9 12.5H0.75Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M0.75 12.5L11.25 1.25L9 9.5H17.25L6.75 20.75L9 12.5H0.75Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
         {title}
         </h2>

@@ -35,7 +35,7 @@ export function Dropdown() {
     <div className="">
       <button className="inline-flex justify-center gap-x-6 items-center" onClick={open}>
         <span>Menu </span>
-        <svg className="w-4 h-4" mlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg className="w-4 h-4" mlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="m6 9 6 6 6-6" />
         </svg>
       </button>

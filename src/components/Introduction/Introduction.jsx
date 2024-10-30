@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Introduction = ({ title, content, socialLinks = [] }) => {
   return (
-    <div className="flex flex-col gap-6 w-full lg:w-[672px] lg:h-96 bg-green-100">
+    <div className="flex flex-col gap-6 w-full lg:w-[672px] lg:h-96">
       <Image
         src="/Introduction/profile.jpg"
         width={64}

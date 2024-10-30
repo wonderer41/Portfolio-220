@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col px-4 lg:px-36  gap-6">
+    <div className="flex flex-col px-4 pt-6 pb-16 lg:px-36 gap-6">
       <Introduction
         className="introduction"
         title={"Software engineer, father, and believer"}
@@ -24,7 +24,7 @@ export default function Home() {
         }
         socialLinks={socialLinks}
       />
-      <div className="body-container lg:flex flex-row flex-col justify-between sm:flex-row ">
+      <div className="body-container lg:flex flex-row flex-col justify-between sm:flex-row gap-6">
         <ArticleCard articleList={articleList} />
         <section className="widget-container flex flex-col gap-6">
           <SignupWidget
