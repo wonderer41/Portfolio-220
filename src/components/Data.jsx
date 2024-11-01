@@ -71,25 +71,25 @@ export const socialLinks = [
 
 export const articleList = [
   {
-    date: "December 25, 2023",
-    title: "Lorem ipsum dolor sit amet",
+    date: "Jun 7, 2017",
+    title: "You are not Google",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...",
-    link: "/articles/my-first-article",
+      "Software engineers go crazy for the most ridiculous things. We like to think that we’re hyper-rational, but when we have to choose a technology, we end up in a kind of frenzy — bouncing from one person’s Hacker News comment to another’s blog post until, in a stupor, we float helplessly toward the brightest light and lay prone in front of it, oblivious to what we were looking for in the first place.",
+    link: "https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb",
   },
   {
-    date: "December 25, 2023",
-    title: "Lorem ipsum dolor sit amet",
+    date: "April 9 2024",
+    title: "Developing Dave the Diver with Jaeho Hwang and Minsuk Cha",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...",
-    link: "/articles/my-second-article",
+      "Developing a modern video game can be a big technical and creative challenge. Game development involves bringing together skills in software engineering, game design, art and sound. Frequently, this is done in a collaborative setting which requires strong teamwork.",
+    link: "https://softwareengineeringdaily.com/2024/04/09/developing-dave-the-diver-with-jaeho-hwang-and-minsuk-cha/",
   },
   {
-    date: "December 25, 2023",
-    title: "Lorem ipsum dolor sit amet",
+    date: "October 7 2021",
+    title: "How Your Network Affects User Interactivity",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...",
-    link: "/articles/my-third-article",
+      "The internet was designed to move data worldwide, despite technological advancements, global catastrophes, or your geography. It’s meant to be reliable, no matter any of those",
+    link: "https://softwareengineeringdaily.com/2021/10/07/how-your-network-affects-user-interactivity/",
   },
 ];
 
